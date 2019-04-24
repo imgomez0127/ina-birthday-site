@@ -3,6 +3,7 @@ body{
 }
 .navbar{
     background-color:#FF9884;
+    box-shadow:0px 10px;
 }
 .page-brand{
     font-size:40px;
@@ -26,19 +27,17 @@ body{
     justify-content:center;
     align-items:center;
 }
-.name{
+.banner-text{
     color:#75D0A4;
-    font-size:10em;
+    font-size:9.5em;
     text-align:center;
-    z-index:1;
-    position:absolute;
+    opacity:1;
 } 
 .banner-image{
     position:absolute;
     width:100%;
     height:42em;
     margin-bottom:42em;
-    border-bottom:10px solid #75D0A4;
     object-fit:cover;
 }
 #img2,#img3{
@@ -63,10 +62,33 @@ body{
     background-color:#FF9884;
 }
 .dot-wrapper{
+    margin-left:-2%;
     width:15%;
 }
 .carousel-buttons-wrapper{
     margin-top:2%;
     display:flex;
     justify-content:space-around;
+}
+.banner-text-background{
+    background-color:rgba(255,255,255,0.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    position:absolute;
+    z-index:1;
+    width:50%;
+}
+.banner-text-border{
+    border: 5px dotted #EF3838;
+    margin:3%;
+}
+.content{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.content-h1{    
+    font-size:5em;
 }
