@@ -22,12 +22,11 @@
         cur_img = new_img
     }         
     let makeVisable = function(tagSelector){
-        $(tagSelector).fadeIn(600);
+        $(tagSelector).fadeIn(300);
     }
     let makeInvisible = function(tagSelector){
-        $(tagSelector).fadeOut(600);
+        $(tagSelector).fadeOut(300);
     }
-
     let globalImageSwitcher = setInterval(changeToNextImage,10000);
     $(".flaticon-right-arrow").click(function(){
         clearInterval(globalImageSwitcher)

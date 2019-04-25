@@ -1,21 +1,19 @@
 body{
     background-color:#FEFFE4;
-    font-family:"Josefin slab", serif;
 }
 .navbar{
     background-color:#FF9884;
-    box-shadow:0px 2px 2px;
+    box-shadow:0px 5px 5px;
 }
 .page-brand{
-    font-size:50px;
-    font-family:"Pacifico",cursive;
+    font-size:40px;
     color:#580F0F;
 }
 .page-brand:hover{
     color:#7E4747;
 }
 .nav-link{
-    font-size:25px;
+    font-size:20px;
     color:#795151;
 }
 .nav-link:hover{
@@ -30,7 +28,7 @@ body{
     align-items:center;
 }
 .banner-text{
-    color:#580F0F;
+    color:#75D0A4;
     font-size:9.5em;
     text-align:center;
     opacity:1;
@@ -38,13 +36,14 @@ body{
 .banner-image{
     position:absolute;
     width:100%;
-    height:40em;
+    height:42em;
     margin-bottom:42em;
     object-fit:cover;
 }
 #img2,#img3{
     margin-left:0%;
     margin-bottom:42em;
+    border-bottom:10px solid #75D0A4;
     margin-right:0%;
     display:none;
 }
@@ -96,36 +95,31 @@ body{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    color:#580F0F;
 }
 .content-h1{    
-    color:#580F0F;
     font-size:5em;
-    border-bottom:1px solid black;
 }
 #gallery{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    width:100%;
-    margin-bottom:5%;
+    width:90%;
 }
 .gallery-wrapper{
-    width:90%;
+    width:100%;
     display:grid;
     justify-items:center;
     align-items:center;
-    grid-template-columns:[col1] 22% [col2] 20% [col3] 20% [col4] 22% [col5] auto;
-    grid-template-rows: [row1] 400px [row2] 400px [row3] auto;
+    grid-template-columns:[col1] 20% [col2] 20% [col3] 20% [col4] 20% [col5] 20%;
+    grid-template-rows: [row1] 1000px [row2] 1000px [row3] auto;
     grid-column-gap:5%;
     grid-row-gap:5%;
 }
 .gallery-wrapper > img{
-    border:10px solid #FFD7D0;
+    border:10px solid #FF9884;
 }
 .gallery-wrapper > img:hover{
     cursor:pointer;
-    box-shadow:1px 1px 5px;
 }
 #galleryItem1{
     grid-column-start:col1;
@@ -175,15 +169,3 @@ body{
     width:100%;
     height:100%;
 }
-.content-p{
-    text-align:center;
-    font-size:2em;
-}
-#message{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    width:50%;
-    margin-bottom:5%;
-}
-
